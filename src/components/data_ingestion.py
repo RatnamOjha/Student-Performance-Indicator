@@ -10,6 +10,10 @@ from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
 from src.exceptions import CustomException
+from src.components.data_transform import DataTransform
+from src.components.data_transform import DataTransformConfig
+
+
 
 
 
@@ -52,5 +56,11 @@ class DataIngestion:
         
 if __name__ == "__main__":
     obj = DataIngestion()
-    obj.initiate_data_ingestion()
+    train_data, test_data=obj.initiate_data_ingestion()
+    data_transformation=DataTransform()
+    train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+    print(train_arr)
+    print(test_arr)
+    print("Data Ingestion completed successfully")
+    print("Data Transformation completed successfully")
         
