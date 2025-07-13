@@ -1,6 +1,6 @@
 # Student Performance Analysis & Prediction
 
-Welcome! 👋 I'm Ratnam, and this project is my hands-on exploration into understanding and predicting student performance using real-world data. My goal was to build a transparent, reproducible process for tackling a regression problem from scratch—starting with raw data and ending with a trained model, all while learning and documenting each step along the way.
+This project is my hands-on exploration into understanding and predicting student performance using real-world data. My goal was to build a transparent, reproducible process for tackling a regression problem from scratch—starting with raw data and ending with a trained model, all while learning and documenting each step along the way.
 
 ## Why This Project?
 
