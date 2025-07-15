@@ -74,7 +74,7 @@ class ModelTrainer:
                     'algorithm':['auto','ball_tree','kd_tree','brute'],
                     'leaf_size':[20,30,40,50]
                 },
-                
+
                 "Linear Regression":{},
                 "XGBRegressor":{
                     'learning_rate':[.1,.01,.05,.001],
@@ -117,7 +117,7 @@ class ModelTrainer:
             r2_square = r2_score(y_test, predicted)
             logging.info(f"R2 score of the best model: {r2_square}")
             logging.info("Model training completed successfully")
-            return r2_square 
+            return r2_square
 
         
         except:
