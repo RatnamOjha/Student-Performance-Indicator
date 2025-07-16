@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect
 from src.pipeline.predict_pipleline import CustomData, PredictPipeline
 
 application = Flask(__name__)
@@ -7,7 +7,7 @@ app = application
 # Route for home page
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return redirect('/predict')
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict_datapoint():
