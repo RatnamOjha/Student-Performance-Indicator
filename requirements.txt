@@ -11,3 +11,5 @@ Flask
 
 # Added for deployment
  gunicorn
+setuptools
+wheel
