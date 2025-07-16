@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect
+from flask import Flask, request, render_template
 from src.pipeline.predict_pipleline import CustomData, PredictPipeline
 
 application = Flask(__name__)
