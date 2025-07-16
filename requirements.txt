@@ -1,5 +1,5 @@
 pandas>=1.3.0
-numpy>=1.26.0
+numpy==1.21.0
 seaborn
 matplotlib
 scikit-learn==1.6.1
@@ -11,5 +11,3 @@ Flask
 
 # Added for deployment
  gunicorn
-setuptools
-wheel
